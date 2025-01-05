@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e6f7f0 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .welcome {
+        display: none;
+    }
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.input:focus {
+    border-color: #34d399;
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.2);
+}
+
+img {
+    width: 50px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* display: inline-block; Optional, but keeps it inline */
+    float: left; /* Corrected from position to float */
+}
+
+h1 {
+    font-weight: 600; /* Adjusts the boldness */
+    color: #0d9a66; /* A shade of green */
+}
